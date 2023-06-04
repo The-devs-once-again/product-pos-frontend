@@ -3,11 +3,12 @@ import styled from 'styled-components/native';
 
 type TypographyProps = {
     color?: string;
+    textAlign?: string;
 }
 
 const BaseText = styled.Text<TypographyProps>`
     color: ${({color = "#000"}) => color}
-    text-align: center;
+    text-align: ${({textAlign = "center"}) => textAlign};
 `;
 
 const Typography = {
