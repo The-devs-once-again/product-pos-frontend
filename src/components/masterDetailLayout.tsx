@@ -2,6 +2,7 @@ import React from "react";
 import { View, StyleSheet, SafeAreaView } from "react-native";
 import { COLORS } from "constants/theme";
 import { getStatusBarHeight } from "react-native-iphone-x-helper";
+import { VerticalDivider } from "./common/verticalDivider";
 
 const statusBarHeight = getStatusBarHeight();
 
@@ -29,11 +30,6 @@ const styles = StyleSheet.create({
   },
   styledColumn: {
     paddingTop: statusBarHeight,
-  },
-  verticalDivider: {
-    width: 0.5,
-    height: "100%",
-    backgroundColor: COLORS.gray[100],
   },
 });
 
@@ -65,11 +61,11 @@ const MasterDetailLayout: React.FC<Props> = ({
       <Column
         width={masterViewWidth}
         backgroundColor={masterBackroundColor}
-        paddingTop={70}
+        paddingTop={40}
       >
         {masterView}
       </Column>
-      <View style={styles.verticalDivider} />
+      <VerticalDivider />
       <Column
         backgroundColor={detailColumnBackground}
         flex={1}
