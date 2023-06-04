@@ -1,17 +1,17 @@
 import { createStackNavigator } from "@react-navigation/stack";
-import Views from "views";
+import Features from "features";
 
 const Stack = createStackNavigator();
 
 const DetailNavigator = () => {
   return (
     <Stack.Navigator screenOptions={{ animationEnabled: false, headerStatusBarHeight: 0,}}>
-      {Views.map((view) => (
+      {Features.map((feature) => (
         <Stack.Screen
-          key={view.ViewName}
-          name={view.ViewName}
-          component={view.ViewComponent}
-          options={{ headerLeft: () => null, headerTitle: view.ViewName }}
+          key={feature.ViewName}
+          name={feature.ViewName}
+          component={feature.ViewComponent}
+          options={{ headerLeft: () => null, headerTitle: feature.NavName }}
         />
       ))}
     </Stack.Navigator>
