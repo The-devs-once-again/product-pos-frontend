@@ -1,14 +1,12 @@
-import { useCallback } from "react";
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
+import MasterDetailLayout from "components/masterDetailLayout";
+import Sidebar from "components/sidebar/sideBar";
 import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
-import Typography from "@components/typography";
-import MasterDetailLayout from "components/masterDetailLayout";
-import { COLORS } from "constants/theme";
-import Sidebar from "components/sidebar/sideBar";
-import { NavigationContainer } from "@react-navigation/native";
+import { StatusBar } from "expo-status-bar";
 import DetailNavigator from "navigations/detailNavigator";
+import { useCallback } from "react";
+import { StyleSheet, View } from "react-native";
 
 SplashScreen.preventAutoHideAsync();
 

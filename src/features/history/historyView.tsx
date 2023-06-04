@@ -1,12 +1,12 @@
 import ViewContainer from "components/containers/viewContainer";
 import Typography from "components/typography";
 
-const BillsView = () => {
+const History = () => {
   return (
     <ViewContainer>
-      <Typography.headlineMedium>OrdersView</Typography.headlineMedium>
+      <Typography.headlineMedium>History</Typography.headlineMedium>
     </ViewContainer>
   );
 };
 
-export default BillsView;
+export default History;
